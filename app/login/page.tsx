@@ -9,7 +9,7 @@ export default function LoginPage() {
   const [message, setMessage] = useState('');
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setMessage('');
 

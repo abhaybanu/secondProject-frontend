@@ -9,7 +9,7 @@ export default function SignupPage() {
   const [message, setMessage] = useState('');
   const router = useRouter();
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setMessage('');
 
